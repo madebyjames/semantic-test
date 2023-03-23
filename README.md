@@ -1,3 +1,3 @@
 # semantic-test
 
-Testing semantic releases
+Testing semantic releases.
