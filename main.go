@@ -22,7 +22,7 @@ func main() {
 }
 
 func handleRoot(w http.ResponseWriter, _ *http.Request) {
-	_, err := io.WriteString(w, "Hello world!")
+	_, err := io.WriteString(w, "Hello 🌎!")
 	if err != nil {
 		http.Error(w, "", http.StatusInternalServerError)
 		return
