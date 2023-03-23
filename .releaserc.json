@@ -12,7 +12,7 @@
     "@semantic-release/github",
     ["@semantic-release/exec",
       {
-        "publishCmd": "echo ::set-output name=semanticVersion::${nextRelease.version}"
+        "publishCmd": "echo \"semanticVersion=${nextRelease.version}\" >> $GITHUB_OUTPUT"
       }
     ]
   ]
