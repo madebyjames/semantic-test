@@ -37,7 +37,7 @@ jobs:
       - name: Build and push container
         uses: docker/build-push-action@v4
         with:
-          tags:
-            - ${{ vars.DOCKER_REPOSITORY }}:${{ needs.release.outputs.version }}
-            - ${{ vars.DOCKER_REPOSITORY }}:latest
+          tags: |
+            ${{ vars.DOCKER_REPOSITORY }}:${{ needs.release.outputs.version }}
+            ${{ vars.DOCKER_REPOSITORY }}:latest
           push: true
